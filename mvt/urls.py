@@ -15,9 +15,9 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from App_mvt.views import mostrar_plantilla
+from App_mvt.views import listar_familia
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('index', mostrar_plantilla),
+    path('index/', listar_familia),
 ]

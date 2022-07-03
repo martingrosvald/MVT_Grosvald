@@ -7,6 +7,10 @@
     <title>Document</title>
 </head>
 <body>
-    Esta es una plantilla
+   <ul>
+    {% for familia in familiares %}
+        <li>{{familia.nombre_completo}}, {{familia.parentezco}}, Teléfono {{familia.nro_tel}}, Edad: {{familia.edad}}</li>
+    {% endfor %}
+    </ul>
 </body>
 </html>
